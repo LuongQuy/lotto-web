@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--seo-->
+    <meta name="description" content="Lotto - International blockchain lottery based on Ethereum smart contacts">
+    <title>Lottery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<video id="video_background" preload="auto" autoplay="true" loop="loop" muted volume="0">
+    <source src="videos/background.mp4" type="video/mp4"/>
+</video>
+<div class="container">
+    <div class="row" style="margin-top: 100px">
+        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+            <div id="balls-bar" data-ticket-id="1" style="">
+                <div class="ticket-title">Ticket 1</div>
+                <div class="ticket-info">Select 5 numbers</div>
+                <a class="ticket-clear" style="" onclick="deleteBall()"></a><a class="ticket-random" style="display: none;"></a>
+                <div class="ball" data-id="1">
+                    <div class="ball-number">1</div>
+                </div>
+                <div class="ball" data-id="2">
+                    <div class="ball-number">2</div>
+                </div>
+                <div class="ball" data-id="3">
+                    <div class="ball-number">3</div>
+                </div>
+                <div class="ball" data-id="4">
+                    <div class="ball-number">4</div>
+                </div>
+                <div class="ball" data-id="5">
+                    <div class="ball-number">5</div>
+                </div>
+                <div class="ball" data-id="6">
+                    <div class="ball-number">6</div>
+                </div>
+                <div class="ball" data-id="7">
+                    <div class="ball-number">7</div>
+                </div>
+                <div class="ball" data-id="8">
+                    <div class="ball-number">8</div>
+                </div>
+                <div class="ball" data-id="9">
+                    <div class="ball-number">9</div>
+                </div>
+                <div class="ball" data-id="10">
+                    <div class="ball-number">10</div>
+                </div>
+                <div class="ball" data-id="11">
+                    <div class="ball-number">11</div>
+                </div>
+                <div class="ball" data-id="12">
+                    <div class="ball-number">12</div>
+                </div>
+                <div class="ball" data-id="13">
+                    <div class="ball-number">13</div>
+                </div>
+                <div class="ball" data-id="14">
+                    <div class="ball-number">14</div>
+                </div>
+                <div class="ball" data-id="15">
+                    <div class="ball-number">15</div>
+                </div>
+                <div class="ball" data-id="16">
+                    <div class="ball-number">16</div>
+                </div>
+                <div class="ball" data-id="17">
+                    <div class="ball-number">17</div>
+                </div>
+                <div class="ball" data-id="18">
+                    <div class="ball-number">18</div>
+                </div>
+                <div class="ball" data-id="19">
+                    <div class="ball-number">19</div>
+                </div>
+                <div class="ball" data-id="20">
+                    <div class="ball-number">20</div>
+                </div>
+                <div class="ball" data-id="21">
+                    <div class="ball-number">21</div>
+                </div>
+                <div class="ball" data-id="22">
+                    <div class="ball-number">22</div>
+                </div>
+                <div class="ball" data-id="23">
+                    <div class="ball-number">23</div>
+                </div>
+                <div class="ball" data-id="24">
+                    <div class="ball-number">24</div>
+                </div>
+                <div class="ball" data-id="25">
+                    <div class="ball-number">25</div>
+                </div>
+                <div class="ball" data-id="26">
+                    <div class="ball-number">26</div>
+                </div>
+                <div class="ball" data-id="27">
+                    <div class="ball-number">27</div>
+                </div>
+                <div class="ball" data-id="28">
+                    <div class="ball-number">28</div>
+                </div>
+                <div class="ball" data-id="29">
+                    <div class="ball-number">29</div>
+                </div>
+                <div class="ball" data-id="30">
+                    <div class="ball-number">30</div>
+                </div>
+                <div class="ball" data-id="31">
+                    <div class="ball-number">31</div>
+                </div>
+                <div class="ball" data-id="32">
+                    <div class="ball-number">32</div>
+                </div>
+                <div class="ball" data-id="33">
+                    <div class="ball-number">33</div>
+                </div>
+                <div class="ball" data-id="34">
+                    <div class="ball-number">34</div>
+                </div>
+                <div class="ball" data-id="35">
+                    <div class="ball-number">35</div>
+                </div>
+                <div class="ball" data-id="36">
+                    <div class="ball-number">36</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+            <div id="lottoDesktopToolbar" style="" class="">
+                <div>
+                    <img src="img/logo_5x36.svg">
+                </div>
+
+                <div>
+                    <span class="jackPotLabel" data-locale="jackpot">Jackpot</span><br>
+                    <span class="jackPotAmountLabel">82 ETH</span><br>
+                    <span class="timeLabel">22:37:56 time left</span>
+                </div>
+
+                <div class="totalCountLabel" style="display: none;">0 tickets</div>
+
+                <a href="#" class="buyButton button button-big button-fill disabled">Buy</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/javascript.js"></script>
+</body>
+</html>

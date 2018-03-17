@@ -1,0 +1,147 @@
+*{
+    text-decoration: none !important;
+
+}
+body{
+    background-color: ghostwhite;
+}
+.ball{
+    background-color: #fff;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 11px;
+}
+.ball-number {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 400;
+    user-select: none;
+}
+#lottoDesktopToolbar {
+    box-sizing: border-box;
+    width: 70%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+#lottoDesktopToolbar img {
+    height: 100px;
+}
+#lottoDesktopToolbar .buyButton {
+    margin-top: 14px;
+}
+.button.button-fill {
+    background: #fff;
+    color: #fff;
+}
+.button.button-fill {
+    color: #fff;
+    background: #007aff;
+    border-color: transparent;
+}
+.button.button-big {
+    font-size: 17px;
+    height: 44px;
+    line-height: 42px;
+}
+/*.disabled, [disabled] {*/
+    /*opacity: .55;*/
+    /*pointer-events: none;*/
+/*}*/
+.button {
+    border: 1px solid #007aff;
+    color: #007aff;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+    line-height: 27px;
+    box-sizing: border-box;
+    background: 0 0;
+    padding: 0 10px;
+    margin: 0;
+    height: 29px;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    outline: 0;
+}
+#lottoDesktopToolbar .jackPotLabel {
+    font-size: 18px;
+    color: #000;
+}
+#lottoDesktopToolbar .jackPotAmountLabel {
+    font-weight: 700;
+    font-size: 24px;
+    color: #000;
+}
+#balls-bar {
+    overflow: auto;
+    background: #CCFFFF;
+    border-radius: 10px;
+}
+.ticket-title {
+    font-size: 17px;
+}
+.ticket-info {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.ticket-info, .ticket-title {
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.ball-selected {
+    background-color: #ff771c;
+    color: #fff;
+}
+.ball, .item-link {
+    cursor: pointer;
+}
+.ticket-clear {
+    top: 24px;
+    right: 22px;
+    width: 28px;
+    height: 28px;
+    background-image: url(../img/delete.png);
+}
+.ticket-random {
+    top: 22px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/wand.png);
+}
+.ticket-clear, .ticket-random {
+    background-size: cover;
+    position: absolute;
+    cursor: pointer;
+}
+#video_background {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+}
